@@ -40,6 +40,9 @@ In particular:
 
 [Recent Search Python code](https://github.com/twitterdev/Twitter-API-v2-sample-code/blob/main/Recent-Search/recent_search.py)
 
+The source Twitter API v2 Sample code is used under the this [license.](https://github.com/twitterdev/Twitter-API-v2-sample-code#license) Note that the Twitter sample source code has been modified for use here.
+
+
 
 ## Jupyter Notebooks
 Two Jupyter Notebooks are provided as the main entry points to run the code:
@@ -51,6 +54,12 @@ within each notebook may be called from an external application.
 
 ## Log Files
 
+
+
+## License
+Copyright 2022 Cedarwood Insights Limited.
+
+Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0
 
 
 ## Stuff to mention
