@@ -72,10 +72,16 @@ See: [Twitter API v2 Tweet Caps](https://developer.twitter.com/en/docs/twitter-a
 
 
 ## Log Files
+Each time the main() code is run (either using twitter_count_recent_main.ipynb or twitter_search_recent_main.ipynb) a new log file will be automtically generated.
 
+This is achieved by making two seperate calls to a function in the attached cedarlog.py module. The first call (at the beginning of the main program) will generate a log file name, then redirect the Python standard output to this log file. The second call (at the end of the main program) will close the log file then read the saved contents back to the default standard output.
+
+Note: you will first need to *manually* create a folder to store the log files. The folder should be relative to the location of the Python files (eg, /log_files)
+
+For more information please see: [Cedarlog Repo](https://github.com/CedarwoodInsights/cedarlog)
 
 ## Support
-Happy to answer any questions. Just drop me a line.
+Happy to respond to any comments and answer any questions. Please feel free to drop me a line.
 
 ## License
 Copyright 2022 Cedarwood Insights Limited.
