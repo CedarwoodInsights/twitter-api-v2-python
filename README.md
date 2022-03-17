@@ -42,8 +42,6 @@ In particular:
 
 The source Twitter API v2 Sample code is used under the this [license.](https://github.com/twitterdev/Twitter-API-v2-sample-code#license) Note that the Twitter sample source code has been modified for use here.
 
-
-
 ## Jupyter Notebooks
 Two Jupyter Notebooks are provided as the main entry points to run the code:
 - twitter_count_recent_main.ipynb
@@ -52,18 +50,34 @@ Two Jupyter Notebooks are provided as the main entry points to run the code:
 These can be run directly from Jupyter. Alternatively the main() function
 within each notebook may be called from an external application.
 
+## Twitter API Query Parameters
+For more information about the available Twitter API Query Parameters see the following:
+
+[Building queries for Tweet Counts](https://developer.twitter.com/en/docs/twitter-api/tweets/counts/integrate/build-a-query)
+
+[Building queries for Search Tweets](https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query)
+
+## Twitter API Rate Limits and Tweet Caps
+Note that the Twitter API v2 rate limits are currently set as follows:
+- Tweet Counts Recent: 300 requests per 15 minute window
+- Search Tweets Recent: 450 requests per 15 minute window
+
+See: [Twitter API v2 Rate Limits](https://developer.twitter.com/en/docs/twitter-api/rate-limits)
+
+These rate limits largely affect the searching of tweets. The maximum number of tweets ("max_results" query parameter) that can be returned per request is 100. So in a 15 minute window you may only return a maximum of 450 x 100 = 45000 tweets. Then you will need to wait 15 minutes before trying again.
+
+Also in the case of Search Tweets there is a tweet cap of 2 million tweets per month (for "elevated" access).
+
+See: [Twitter API v2 Tweet Caps](https://developer.twitter.com/en/docs/twitter-api/tweet-caps)
+
+
 ## Log Files
 
 
+## Support
+Happy to answer any questions. Just drop me a line.
 
 ## License
 Copyright 2022 Cedarwood Insights Limited.
 
 Licensed under the Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0
-
-
-## Stuff to mention
-- Log files - need to manualy create a folder (eg log_files)
-- Error handling
-- KNIME?
--
