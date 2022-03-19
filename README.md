@@ -26,7 +26,7 @@ Once you have your Twitter Bearer Token, copy and paste this into the attached "
 
 ```py
 def set_environment_variable():
-    os.environ["BEARER_TOKEN"]="<Paste your Twitter Bearer Token here, inside the quotation marks.>"
+    os.environ["BEARER_TOKEN"]="<Paste your Bearer Token here inside the quotation marks>"
     return
 ```
 
