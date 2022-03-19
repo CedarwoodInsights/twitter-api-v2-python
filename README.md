@@ -24,9 +24,11 @@ See: [Twitter Authentication](https://developer.twitter.com/en/docs/authenticati
 
 Once you have your Twitter Bearer Token, copy and paste this into the attached "twitter_bearer_token.py" file as follows:
 
-        def set_environment_variable():
-              os.environ["BEARER_TOKEN"]="<Paste your Twitter Bearer Token here, inside the quotation marks.>"
-              return
+```py
+def set_environment_variable():
+    os.environ["BEARER_TOKEN"]="<Paste your Twitter Bearer Token here, inside the quotation marks.>"
+    return
+```
 
 ## Twitter API v2 Sample Code
 The underlying Python code used for accessing the Twitter endpoints is sourced
